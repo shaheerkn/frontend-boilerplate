@@ -4,11 +4,15 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev:vite": "vite",
+    "compile:sass": "node-sass --watch scss/style.scss css/style.css",
     "build": "vite build",
     "preview": "vite preview"
   },
   "devDependencies": {
     "vite": "^5.1.4"
+  },
+  "dependencies": {
+    "node-sass": "^9.0.0"
   }
 }

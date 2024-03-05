@@ -1,0 +1,54 @@
+h1, h2, h3, h4, h5, h6, a, p {
+  color: #101010; }
+
+@font-face {
+  font-family: 'visby-semibold';
+  src: url("/assets/fonts/VisbyCF-DemiBold.otf"); }
+
+body {
+  font-family: 'visby-semibold'; }
+
+h1, .h1 {
+  font-family: 'visby-semibold';
+  font-size: 56px;
+  line-height: 1.14; }
+
+h2, .h2 {
+  font-size: 40px; }
+
+.medium-text {
+  font-size: 18px;
+  font-weight: 400; }
+
+.base-text {
+  font-size: 16px; }
+
+.small-text {
+  font-size: 14px; }
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+.relative {
+  position: relative; }
+
+.absolute {
+  position: absolute; }
+
+.btn {
+  color: inherit;
+  text-align: none;
+  display: inline-block;
+  background-color: #101010;
+  color: #FFFFFFFF;
+  border-radius: 50%;
+  padding: 10px 24px; }
+
+.btn--large {
+  padding-inline: 40px; }
+
+.btn--secondary {
+  background-color: #FFFFFFFF;
+  color: #101010; }

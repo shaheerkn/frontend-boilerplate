@@ -1,0 +1,31 @@
+@font-face {
+  font-family: 'visby-semibold';
+  src: url('/assets/fonts/VisbyCF-DemiBold.otf');
+}
+
+body {
+  font-family: 'visby-semibold';
+}
+
+h1, .h1 {
+  font-family: 'visby-semibold';
+  font-size: 56px;
+  line-height: 1.14;
+}
+
+h2, .h2 {
+  font-size: 40px;
+}
+
+.medium-text {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.base-text {
+  font-size: 16px;
+}
+
+.small-text {
+  font-size: 14px;
+}

@@ -1,20 +1,9 @@
-// Base
 @import 'base/colors';
 @import 'base/typography';
+@import 'base/spacing';
 @import 'base/reset';
-
-// Components
+@import 'utils/global';
 @import 'components/buttons';
 @import 'components/navbar';
-
-// Layouts
 @import 'layouts/header';
 @import 'layouts/footer';
-
-// Pages
-
-// Themes
-
-// Utils
-
-// Vendors

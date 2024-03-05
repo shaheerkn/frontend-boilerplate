@@ -5,3 +5,32 @@
 .absolute {
   position: absolute;
 }
+
+button {
+  all: unset;
+  appearance: none;
+}
+
+.brand {
+  font-size: 28px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.translate-x-center {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.flex-vertically-center {
+  display: flex;
+  align-items: center;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}

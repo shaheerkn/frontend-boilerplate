@@ -2,8 +2,11 @@
 @import 'base/typography';
 @import 'base/spacing';
 @import 'base/reset';
+@import 'vendors/swiper-styles.scss';
 @import 'utils/global';
+@import 'utils/grid';
 @import 'components/buttons';
-@import 'components/navbar';
+@import 'components/navigations';
 @import 'layouts/header';
+@import 'layouts/banner';
 @import 'layouts/footer';

@@ -3,12 +3,73 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.css">
     <title>Swift - Ecommerce Theme</title>
   </head>
   <body>
-    <h1>Heading 1</h1>
-    <h2>Heading 2</h2>
-    <script type="module" src="/main.js"></script>
+    <!-- .header--logo-center (To center logo) -->
+    <header class="header">
+      <div class="container">
+        <a href="#" class="brand">Logo</a>
+        <ul class="main-navigation" role="navigation">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">Clothing</a></li>
+          <li><a href="#services">Shoes</a></li>
+          <li><a href="#contact">Gift</a></li>
+          <li><a href="#contact">Blog</a></li>
+        </ul>
+        <ul class="header__icons">
+          <button class="">
+            <img src="/assets/icons/icon-search.svg" alt="icon-search">
+          </button>
+
+          <button class="">
+            <img src="/assets/icons/icon-account.svg" alt="icon-account">
+          </button>
+
+          <button class="">
+            <img src="/assets/icons/icon-heart.svg" alt="icon-heart">
+          </button>
+
+          <button class="">
+            <img src="/assets/icons/icon-cart.svg" alt="icon-cart">
+          </button>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <section class="banner relative">
+        <div class="banner__slider swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="container">
+                <h1 class="h1 capitalize">Discover the best summer collection</h1>
+                <p class="medium-text">Avail Upto 70% Flat Disounts!</p>
+                <a href="#" class="btn uppercase">aLL PRODUCTS</a>
+              </div>
+            </div>
+            <div class="swiper-slide">Slide 2</div>
+          </div>
+
+          <div class="banner__slider-controls absolute translate-x-center flex-vertically-center">
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+  
+            <div class="autoplay-progress">
+              <svg viewBox="0 0 48 48">
+                <circle cx="24" cy="24" r="20"></circle>
+              </svg>
+              <span></span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script type="module" src="/js/banner.js"></script>
   </body>
 </html>

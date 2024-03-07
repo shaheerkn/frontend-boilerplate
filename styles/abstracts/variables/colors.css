@@ -1,11 +1,9 @@
-:root {
-  --color__primary: #101010;
-  --color__secondary: #50248F;
-  --color__white: #FFFFFFFF;
-  --color__border: #E9E9E9;
-  --color__placeholder: #ECECEC;
-  --color__product-background: #FAFAFA;
-  --swiper-theme-color: var(--color__primary);
-  --swiper-pagination-bullet-inactive-color: var(--color__secondary);
-  --swiper-pagination-color: var(--color__secondary);
-}
+$color__primary: #101010;
+$color__secondary: #50248F;
+$color__white: #FFFFFFFF;
+$color__border: #E9E9E9;
+$color__placeholder: #ECECEC;
+$color__product-background: #FAFAFA;
+$swiper-theme-color: $color__primary;
+$swiper-pagination-bullet-inactive-color: $color__secondary;
+$swiper-pagination-color: $color__secondary;

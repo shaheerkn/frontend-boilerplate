@@ -1,3 +1,20 @@
 @import 'variables/colors';
 @import 'variables/breakpoints';
 @import 'variables/fonts';
+
+:root {
+  /* Colors */
+  --color__primary: $color__primary;
+  --color__secondary: $color__secondary;
+  --color__white: $color__white;
+  --color__border: $color__border;
+  --color__placeholder: $color__placeholder;
+  --color__product-background: $color__product-background;
+  --swiper-theme-color: $swiper-theme-color;
+  --swiper-pagination-bullet-inactive-color: $swiper-pagination-bullet-inactive-color;
+  --swiper-pagination-color: $swiper-pagination-color;
+
+  /* Fonts */
+  --font__headings: $font__headings;
+  --font__body: $font__body;
+}

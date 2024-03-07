@@ -1,18 +1,3 @@
-:root {
-  --xxxs: 320px;
-  --xxs: 445px;
-  --xs: 620px;
-  --s: 768px;
-  --ms: 840px;
-  --m: 1000px;
-  --ml: 1160px;
-  --l: 1200px;
-  --xl: 1440px;
-  --xxl: 1600px;
-}
-
-/* Breakpoint Queries */
-
 /* Min-widths */
 @custom-media --xxxs (min-width: 320px);
 @custom-media --xxs (min-width: 445px);

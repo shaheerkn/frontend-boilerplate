@@ -5,7 +5,10 @@
 @import 'utils/utils';
 @import 'components/buttons';
 @import 'components/navigations';
+
+/* Sections */
 @import 'layouts/header';
 @import 'layouts/banner';
-@import 'layouts/featured-categories';
+@import 'layouts/categories';
+@import 'layouts/countdown';
 @import 'layouts/footer';

@@ -1,0 +1,26 @@
+.countdown {
+
+  .container {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+
+  }
+
+  &__image {
+    background-color: var(--color__placeholder);
+    flex-basis: 600px;
+  }
+
+  &__content {
+    flex-basis: 485px;
+    gap: 40px;
+    align-items: flex-start;
+  }
+
+  &__items {
+    display: flex;
+    gap: 24px;
+  }
+}

@@ -1,4 +1,4 @@
-ul[role="navigation"] {
+ul.main-navigation {
   display: flex;
   list-style: none;
   gap: 32px;

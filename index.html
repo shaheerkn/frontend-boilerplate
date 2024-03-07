@@ -8,81 +8,138 @@
     <title>Swift - Ecommerce Theme</title>
   </head>
   <body>
-    <!-- .header--logo-center (To center logo) -->
     <header class="header">
       <div class="container">
         <a href="#" class="brand">Logo</a>
-        <ul class="main-navigation" role="navigation">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">Clothing</a></li>
-          <li><a href="#services">Shoes</a></li>
-          <li><a href="#contact">Gift</a></li>
-          <li><a href="#contact">Blog</a></li>
-        </ul>
-        <ul class="header__icons">
-          <button class="">
-            <img src="/assets/icons/icon-search.svg" alt="icon-search">
+        <nav role="navigation">
+          <ul class="main-navigation" role="menubar">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">Clothing</a></li>
+            <li><a href="#services">Shoes</a></li>
+            <li><a href="#contact">Gift</a></li>
+            <li><a href="#contact">Blog</a></li>
+          </ul>
+        </nav>
+
+        <div class="header__icons" role="toolbar" aria-label="Tools">
+          <button aria-label="Search">
+            <img src="/assets/icons/icon-search.svg" alt="Search">
           </button>
 
-          <button class="">
-            <img src="/assets/icons/icon-account.svg" alt="icon-account">
+          <button aria-label="Account">
+            <img src="/assets/icons/icon-account.svg" alt="Account">
           </button>
 
-          <button class="">
-            <img src="/assets/icons/icon-heart.svg" alt="icon-heart">
+          <button aria-label="Favorites">
+            <img src="/assets/icons/icon-heart.svg" alt="Favorites">
           </button>
 
-          <button class="">
-            <img src="/assets/icons/icon-cart.svg" alt="icon-cart">
+          <button aria-label="Cart">
+            <img src="/assets/icons/icon-cart.svg" alt="Cart">
           </button>
-        </ul>
+        </div>
       </div>
     </header>
 
     <main>
-      <section class="banner relative">
+      <section class="banner relative" aria-label="Banner">
         <div class="banner__slider swiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <div class="container">
+              <img src="/assets/images/banner-slide-1.webp" alt="Slide" aria-hidden="true" class="background-element">
+              <div class="container z2">
                 <h1 class="h1 capitalize">Discover the best summer collection</h1>
-                <p class="medium-text">Avail Upto 70% Flat Disounts!</p>
-                <a href="#" class="btn uppercase">aLL PRODUCTS</a>
+                <p class="medium-text">Avail Upto 70% Flat Discounts!</p>
+                <a href="#" class="btn uppercase">All Products</a>
               </div>
             </div>
             <div class="swiper-slide">
-               <div class="container">
-                 <h1 class="h1 capitalize">Discover the best summer collection</h1>
-                <p class="medium-text">Avail Upto 70% Flat Disounts!</p>
-                <a href="#" class="btn uppercase">aLL PRODUCTS</a>
+              <div class="container">
+                <h1 class="h1 capitalize" data-swiper-parallax="-400">Discover the best summer collection</h1>
+                <p class="medium-text" data-swiper-parallax="-100">Avail Upto 70% Flat Discounts!</p>
+                <a href="#" class="btn uppercase" data-swiper-parallax="-50">All Products</a>
               </div>
             </div>
           </div>
 
-          <div class="banner__slider-controls absolute translate-x-center flex-vertically-center">
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-pagination"></div>
-            <div class="swiper-button-next"></div>
+          <div class="banner__slider-controls absolute translate-x-center flex-vertically-center" aria-label="Slider Controls">
+            <div class="swiper-button-prev" aria-label="Previous Slide"></div>
+            <div class="swiper-pagination" aria-label="Pagination"></div>
+            <div class="swiper-button-next" aria-label="Next Slide"></div>
 
-            <div class="autoplay-progress">
-              <svg viewBox="0 0 48 48">
+            <div class="autoplay-progress" aria-hidden="true">
+              <svg viewBox="0 0 48 48" aria-hidden="true">
                 <circle cx="24" cy="24" r="20"></circle>
               </svg>
-              <span></span>
+              <span aria-hidden="true"></span>
+
+              <button class="play-pause play-pause__pause" aria-label="Play/Pause"></button>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="featured-categories text-center">
+      <section class="categories text-center" aria-label="Categories">
         <div class="container">
-          <h2 class="align-c">What are you shopping for today?</h2>
+          <h2 class="align-center">What are you shopping for today?</h2>
 
-          <div class="featured-categories__wrapper">
-            <div class="featured-categories__category"></div>
-            <div class="featured-categories__category"></div>
-            <div class="featured-categories__category"></div>
-            <div class="featured-categories__category"></div>
+          <div class="categories__wrapper">
+            <div class="categories__category relative">
+              <button class="categories__category-name btn btn--secondary absolute translate-x-center">Clothing</button>
+              <a href="#" class="categories__category-link absolute" aria-hidden="true"></a>
+            </div>
+            <div class="categories__category relative">
+              <button class="categories__category-name btn btn--secondary absolute translate-x-center">Glasses</button>
+              <a href="#" class="categories__category-link absolute" aria-hidden="true"></a>
+            </div>
+            <div class="categories__category relative">
+              <button class="categories__category-name btn btn--secondary absolute translate-x-center">Sneakers</button>
+              <a href="#" class="categories__category-link absolute" aria-hidden="true"></a>
+            </div>
+            <div class="categories__category relative">
+              <button class="categories__category-name btn btn--secondary absolute translate-x-center">Bags</button>
+              <a href="#" class="categories__category-link absolute" aria-hidden="true"></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="countdown">
+        <div class="container">
+          <div class="countdown__image">
+            <img src="/assets/images/timer.webp" alt="" srcset="">
+          </div>
+
+          <div class="countdown__content flex flex-direction-column align-start">
+            <h2 class="h2 capitalize">get -50% from summer collection</h2>
+            <div class="countdown__items align-center">
+              <div class="countdown__item countdown__item--days">
+                <h2 class="h1">06</h2>
+                <strong>Days</strong>
+              </div>
+
+              <div class="h1 countdown__items-colon">:</div>
+
+              <div class="countdown__item countdown__item--hours">
+                <h2 class="h1">12</h2>
+                <strong>Hours</strong>
+              </div>
+
+              <div class="h1 countdown__items-colon">:</div>
+
+              <div class="countdown__item countdown__item--minutes">
+                <h2 class="h1">29</h2>
+                <strong>Minutes</strong>
+              </div>
+
+              <div class="h1 countdown__items-colon">:</div>
+
+              <div class="countdown__item countdown__item--seconds">
+                <h2 class="h1">00</h2>
+                <strong>Seconds</strong>
+              </div>
+            </div>
+            <a href="#" class="btn btn--arrow uppercase">shop now</a>
           </div>
         </div>
       </section>

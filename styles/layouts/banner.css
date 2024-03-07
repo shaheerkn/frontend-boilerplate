@@ -1,0 +1,17 @@
+.banner {
+  .swiper-slide {
+    background-color: var(--color__placeholder);
+    padding-block: 148px;
+    height: auto;
+  }
+
+  &__slider {
+    --swiper-navigation-size: 15px;
+    padding-bottom: 20px;
+  }
+
+  h1, p {
+    max-width: 650px;
+    margin-bottom: 24px;
+  }
+}

@@ -1,0 +1,9 @@
+@font-face {
+  font-family: 'visby-semibold';
+  src: url('/assets/fonts/VisbyCF-DemiBold.otf');
+}
+
+@font-face {
+  font-family: 'visby-medium';
+  src: url('/assets/fonts/VisbyCF-Medium.otf');
+}

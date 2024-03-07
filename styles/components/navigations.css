@@ -1,0 +1,10 @@
+ul[role="navigation"] {
+  display: flex;
+  list-style: none;
+  gap: 32px;
+
+  a {
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+}

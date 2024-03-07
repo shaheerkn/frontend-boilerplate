@@ -1,17 +1,15 @@
+@import 'fonts';
 @import 'headings';
-
-@font-face {
-  font-family: 'visby-semibold';
-  src: url('/assets/fonts/VisbyCF-DemiBold.otf');
-}
-
-@font-face {
-  font-family: 'visby-medium';
-  src: url('/assets/fonts/VisbyCF-Medium.otf');
-}
 
 body {
   font-family: var(--font__body);
 }
 
 p, a { color: var(--color__primary)}
+
+.capitalize { text-transform: capitalize; }
+.uppercase { text-transform: uppercase; }
+
+.small-text { font-size: 14px; }
+.base-text { font-size: 16px; }
+.medium-text { font-size: 18px; font-weight: 400; font-family: 'visby-medium'; }

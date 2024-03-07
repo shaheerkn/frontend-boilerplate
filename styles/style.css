@@ -1,9 +1,8 @@
-@import 'abstracts/varaibles';
+@import 'abstracts/abstracts';
 @import 'base/typography';
 @import 'base/resets';
 @import 'vendors/swiper-styles';
-@import 'utils/global';
-@import 'utils/grid';
+@import 'utils/utils';
 @import 'components/buttons';
 @import 'components/navigations';
 @import 'layouts/header';

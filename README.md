@@ -24,7 +24,13 @@ Install dependencies
 Start the server
 
 ```bash
-  dev:vite
+  npm run dev
+```
+
+Build
+
+```bash
+  npm run dev
 ```
 
 ## Documentation

@@ -1,0 +1,37 @@
+:root {
+  --xxxs: 320px;
+  --xxs: 445px;
+  --xs: 620px;
+  --s: 768px;
+  --ms: 840px;
+  --m: 1000px;
+  --ml: 1160px;
+  --l: 1200px;
+  --xl: 1440px;
+  --xxl: 1600px;
+}
+
+/* Breakpoint Queries */
+
+/* Min-widths */
+@custom-media --xxxs (min-width: 320px);
+@custom-media --xxs (min-width: 445px);
+@custom-media --xs (min-width: 620px);
+@custom-media --s (min-width: 768px);
+@custom-media --ms (min-width: 840px);
+@custom-media --m (min-width: 1000px);
+@custom-media --ml (min-width: 1160px);
+@custom-media --l (min-width: 1200px);
+@custom-media --xl (min-width: 1440px);
+@custom-media --xlg (min-width: 1600px);
+@custom-media --xxlg (min-width: 1660px);
+@custom-media --xxl (min-width: 1800px);
+
+/* Max-widths */
+@custom-media --xxs-max (max-width: 445px);
+@custom-media --xs-max (max-width: 620px);
+@custom-media --s-max (max-width: 767px);
+@custom-media --m-max (max-width: 999px);
+@custom-media --ms-max (max-width: 839px);
+@custom-media --ml-max (max-width: 1159px);
+@custom-media --l-max (max-width: 1199px);

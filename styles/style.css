@@ -1,7 +1,7 @@
 @import 'abstracts/abstracts';
 @import 'base/typography';
 @import 'base/resets';
-@import 'vendors/swiper-styles';
+@import 'vendors/swiper';
 @import 'utils/utils';
 @import 'components/buttons';
 @import 'components/navigations';

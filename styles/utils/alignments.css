@@ -1,15 +1,15 @@
-.align-l {
+.align-left {
   text-align: left;
 }
 
-.align-c {
+.align-center {
   text-align: center;
 }
 
-.align-r {
+.align-right {
   text-align: right;
 }
 
-.align-j {
+.align-justify {
   text-align: justify;
 }

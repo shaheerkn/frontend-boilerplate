@@ -1,25 +1,19 @@
-.f { display: flex; }
-.if { display: inline-flex; }
-.fw { flex-wrap: wrap; }
-.fwr { flex-wrap: wrap-reverse; }
-.fwn { flex-wrap: nowrap; }
-.fdrr { flex-direction: row-reverse; }
+.flex { display: flex; }
+.flex-wrap { flex-wrap: wrap; }
+.flex-no-wrap { flex-wrap: nowrap; }
 
-.ais { align-items: flex-start; }
+.align-start { align-items: flex-start; }
+.align-end { align-items: flex-end }
+.align-center { align-items: center; }
 
-.aie { align-items: flex-end }
-.aic { align-items: center; }
-.ase { align-self: flex-end; }
+.justify-content-center { justify-content: center; }
+.justify-content-between { justify-content: space-between; }
 
-.aib { align-items: baseline; }
-.jcs { justify-content: flex-start; }
-.jce { justify-content: flex-end; }
+.flex-direction-column { flex-direction: column; }
+.flex-direction-row-reverse { flex-direction: row-reverse; }
 
-.jcc { justify-content: center; }
-.jcb { justify-content: space-between; }
-.jce { justify-content: space-evenly; }
-
-.fg { flex-grow: 1; }
-.ff { flex-shrink: 0; }
-
-.fdc { flex-direction: column; }
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

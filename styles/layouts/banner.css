@@ -1,6 +1,6 @@
 .banner {
   .swiper-slide {
-    background-color: $color-placeholder;
+    background-color: var(--color__placeholder);
     padding-block: 148px;
     height: auto;
   }

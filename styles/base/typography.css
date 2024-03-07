@@ -1,0 +1,17 @@
+@import 'headings';
+
+@font-face {
+  font-family: 'visby-semibold';
+  src: url('/assets/fonts/VisbyCF-DemiBold.otf');
+}
+
+@font-face {
+  font-family: 'visby-medium';
+  src: url('/assets/fonts/VisbyCF-Medium.otf');
+}
+
+body {
+  font-family: var(--font__body);
+}
+
+p, a { color: var(--color__primary)}

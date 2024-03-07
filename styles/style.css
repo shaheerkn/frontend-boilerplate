@@ -1,12 +1,12 @@
-@import 'base/colors';
+@import 'abstracts/varaibles';
 @import 'base/typography';
-@import 'base/spacing';
-@import 'base/reset';
-@import 'vendors/swiper-styles.scss';
+@import 'base/resets';
+@import 'vendors/swiper-styles';
 @import 'utils/global';
 @import 'utils/grid';
 @import 'components/buttons';
 @import 'components/navigations';
 @import 'layouts/header';
 @import 'layouts/banner';
+@import 'layouts/featured-categories';
 @import 'layouts/footer';

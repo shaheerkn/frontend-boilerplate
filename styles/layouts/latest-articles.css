@@ -1,0 +1,11 @@
+@import '../components/article-card';
+
+.latest-articles {
+  margin-block: 120px;
+
+  .row {
+    --gap-between-items: 32px;
+    --items-per-row: 3;
+    margin-top: 32px;
+  }
+}

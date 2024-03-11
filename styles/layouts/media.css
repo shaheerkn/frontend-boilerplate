@@ -1,0 +1,10 @@
+.media {
+  padding: 8px;
+
+  .swiper-slide {
+    height: 200px;
+    background-color: var(--color__placeholder);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+}

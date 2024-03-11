@@ -1,9 +1,10 @@
-const progressCircle = document.querySelector(".banner .autoplay-progress svg");
-const progressContent = document.querySelector(".banner .autoplay-progress span");
-const playPausebButton = document.querySelector(".play-pause");
+const bannerSliderEl = document.querySelector(".banner__slider");
+const progressCircleEl = document.querySelector(".banner .autoplay-progress svg");
+const progressContentEl = document.querySelector(".banner .autoplay-progress span");
+const playPauseButtonEl = document.querySelector(".play-pause");
 
-if (progressCircle && progressContent) {
-  const bannerSlider = new Swiper(".banner__slider", {
+if (bannerSliderEl) {
+  const bannerSlider = new Swiper(bannerSliderEl, {
     centeredSlides: true,
     parallax: true,
     speed: 600,
@@ -20,20 +21,22 @@ if (progressCircle && progressContent) {
     },
     on: {
       autoplayTimeLeft(s, time, progress) {
-        progressCircle.style.setProperty("--progress", 1 - progress);
-        progressContent.textContent = `${Math.ceil(time / 1000)}s`;
+        progressCircleEl.style.setProperty("--progress", 1 - progress);
+        progressContentEl.textContent = `${Math.ceil(time / 1000)}s`;
       }
     }
   });
 
-  playPausebButton.addEventListener('click', () => {
-    playPausebButton.classList.toggle('play-pause__play')
-    playPausebButton.classList.toggle('play-pause__pause')
+  if (playPauseButtonEl) {
+    playPauseButtonEl.addEventListener('click', () => {
+      playPauseButtonEl.classList.toggle('play-pause__play')
+      playPauseButtonEl.classList.toggle('play-pause__pause')
 
-    if (bannerSlider.autoplay.running) {
-      bannerSlider.autoplay.stop();
-    } else {
-      bannerSlider.autoplay.start();
-    }
-  });
+      if (bannerSlider.autoplay.running) {
+        bannerSlider.autoplay.stop();
+      } else {
+        bannerSlider.autoplay.start();
+      }
+    });
+  }
 }

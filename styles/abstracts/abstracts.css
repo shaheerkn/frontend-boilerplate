@@ -10,6 +10,7 @@
   --color__border: $color__border;
   --color__placeholder: $color__placeholder;
   --color__product-background: $color__product-background;
+  --color__disabled: $color__disabled;
   --swiper-theme-color: $swiper-theme-color;
   --swiper-pagination-bullet-inactive-color: $swiper-pagination-bullet-inactive-color;
   --swiper-pagination-color: $swiper-pagination-color;

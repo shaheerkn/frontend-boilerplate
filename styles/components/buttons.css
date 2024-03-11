@@ -11,6 +11,7 @@ button {
   border-radius: 50px;
   padding: 10px 24px;
   line-height: 1.2;
+  cursor: pointer;
 }
 
 .btn--large {
@@ -39,4 +40,18 @@ button {
   &:hover::after {
     transform: translateX(5px);
   }
+}
+
+.btn--fav,
+.btn--cart {
+  border-radius: 50%;
+  padding: 8px;
+}
+
+.btn--fav {
+  background-color: var(--color__white);
+}
+
+.btn--cart {
+  background-color: var(--color__primary);
 }

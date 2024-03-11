@@ -1,0 +1,47 @@
+.newsletter {
+  background-color: var(--color__primary);
+  padding-block: 64px;
+  color: var(--color__white);
+
+  * {
+    color: inherit;
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__text {
+    flex-basis: 530px;
+    flex: 0 0 1;
+
+    p {
+       font-family: 'visby-regular';
+    }
+  }
+
+  form {
+    flex-basis: 400px;
+    flex: 0 0 1;
+
+    input {
+      border: 2px solid currentColor;
+      background: none;
+      padding: 10px 20px 10px 48px;
+      background-image: url("data:image/svg+xml,%3Csvg width='24' height='25' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2 4.372h20v17H2v-17z' stroke='%23fff' stroke-width='1.5' stroke-linejoin='round'/%3E%3Cpath d='m2 7.872 10 5 10-5' stroke='%23fff' stroke-width='1.5'/%3E%3C/svg%3E");
+      background-position: left 12px center;
+      background-repeat: no-repeat;
+
+      &::placeholder {
+        color: currentColor;
+      }
+    }
+
+    .btn {
+      background-color: var(--color__secondary);
+      border-radius: 0;
+      line-height: 1.5;
+    }
+  }
+}

@@ -76,3 +76,13 @@
     opacity: 1;
   }
 }
+
+.button-style-arrow {
+  --swiper-navigation-size: 20px;
+  --swiper-navigation-sides-offset: 0;
+
+  background-color: #000000;
+  color: var(--color__white);
+  padding: 20px;
+  border-radius: 50%;
+}

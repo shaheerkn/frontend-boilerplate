@@ -8,7 +8,7 @@ const secondsEl = countdownEl.querySelector('.countdown__item--seconds .h1');
 
 let targetData = `2024-12-2 12:00:00`;
 
-if (targetData) {
+if (targetData && countdownEl) {
   const endDate = new Date(targetData);
   let secondsLeft = (endDate.getTime() - new Date().getTime()) / 1000;
 

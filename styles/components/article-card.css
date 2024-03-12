@@ -17,11 +17,17 @@
   &__img {
     margin-bottom: 16px;
     overflow: hidden;
+    position: relative;
+    padding-top: 86%;
 
     img {
       width: 100%;
       object-fit: cover;
       transition: transform 0.3s;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
     }
   }
 

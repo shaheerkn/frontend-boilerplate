@@ -1,0 +1,11 @@
+.payment-methods {
+  list-style-type: none;
+  gap: 8px;
+
+  li {
+    background: var(--color__payment-method);
+    border-radius: 4px;
+    width: 46px;
+    height: 32px;
+  }
+}

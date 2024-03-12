@@ -31,3 +31,11 @@
   object-fit: cover;
   z-index: -1;
 }
+
+.seaction-title {
+  margin-bottom: 8px;
+}
+
+.text-decoration-none {
+  text-decoration: none;
+}

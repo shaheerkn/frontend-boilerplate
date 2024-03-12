@@ -4,8 +4,16 @@
   margin-block: 120px;
 
   .row {
+    --items-per-row: 1;
     --gap-between-items: 32px;
-    --items-per-row: 3;
     margin-top: 32px;
+
+    @media (--xs) {
+      --items-per-row: 2;
+    }
+
+    @media (--s) {
+      --items-per-row: 3;
+    }
   }
 }

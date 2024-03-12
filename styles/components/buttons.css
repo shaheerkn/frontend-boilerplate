@@ -1,6 +1,7 @@
 button {
   all: unset;
   appearance: none;
+  cursor: pointer;
 }
 
 .btn {

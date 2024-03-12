@@ -8,6 +8,7 @@
 
 .justify-content-center { justify-content: center; }
 .justify-content-between { justify-content: space-between; }
+.justify-content-start { justify-content: flex-start; }
 
 .flex-direction-column { flex-direction: column; }
 .flex-direction-row-reverse { flex-direction: row-reverse; }

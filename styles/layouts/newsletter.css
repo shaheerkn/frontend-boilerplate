@@ -9,7 +9,16 @@
 
   .container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    gap: 40px;
+
+    @media (--ml) {
+      flex-direction: row;
+      justify-content: space-between;
+      text-align: left;
+    }
   }
 
   &__text {
@@ -23,7 +32,14 @@
 
   form {
     flex-basis: 400px;
-    flex: 0 0 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+
+    @media (--ms) {
+      display: initial;
+    }
 
     input {
       border: 2px solid currentColor;
@@ -39,6 +55,7 @@
     }
 
     .btn {
+      flex-grow: 1;
       background-color: var(--color__secondary);
       border-radius: 0;
       line-height: 1.5;

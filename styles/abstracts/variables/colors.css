@@ -4,6 +4,7 @@ $color__white: #FFFFFFFF;
 $color__border: #E9E9E9;
 $color__placeholder: #ECECEC;
 $color__disabled: #757575;
+$color__payment-method: #2B2B2B;
 $color__product-background: #FAFAFA;
 $swiper-theme-color: $color__primary;
 $swiper-pagination-bullet-inactive-color: $color__secondary;

@@ -1,4 +1,26 @@
-footer {
+@import '../components/payment-methods.css';
+
+.footer {
   background-color: var(--color__primary);
-  padding-block: 120px;
+  color: var(--color__white);
+  padding-top: 120px;
+
+  a, p {
+    color: inherit;
+  }
+
+  nav {
+    margin-top: 40px;
+  }
+
+  &__copyright {
+    border-top: 1px solid var(--color__disabled);
+    margin-top: 40px;
+    padding-block: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
 }

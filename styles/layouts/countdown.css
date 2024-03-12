@@ -2,10 +2,14 @@
 
   .container {
     display: flex;
-    gap: 10px;
-    justify-content: space-between;
+    gap: 20px 40px;
     align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
 
+    @media (--ml) {
+      justify-content: space-between;
+    }
   }
 
   &__image {
@@ -16,11 +20,35 @@
   &__content {
     flex-basis: 485px;
     gap: 40px;
-    align-items: flex-start;
+    align-items: center;
+    text-align: center;
+
+    @media (--ml) {
+      text-align: left;
+      align-items: flex-start;
+    }
   }
 
   &__items {
     display: flex;
-    gap: 24px;
+    justify-content: space-between;
+    width: 100%;
+    gap: 10px;
+
+    @media (--xs) {
+      gap: 24px;
+    }
+  }
+
+  &__items .h1 {
+    font-size: 16px;
+
+    @media (--xxs) {
+      font-size: 24px;
+    }
+
+    @media (--xs) {
+      font-size: 56px;
+    }
   }
 }

@@ -14,7 +14,16 @@
     order: 3;
   }
 
-  &--logo-center .brand {
-    order: 2;
+  .header__add-to-cart {
+    gap: 5px;
+
+    span {
+      background-color: var(--color__primary);
+      color: var(--color__white);
+      border-radius: 50%;
+      width: 24px;
+      height: 24px;
+      font-size: 12px;
+    }
   }
 }

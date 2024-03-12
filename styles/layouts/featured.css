@@ -3,19 +3,37 @@
 
   .row {
     --gap-between-items: 32px;
-    --items-per-row: 4;
+    --items-per-row: 1;
     margin-top: 32px;
+
+    @media (--xxs) {
+      --gap-between-items: 50px;
+      --items-per-row: 2;
+    }
+
+    @media (--m) {
+      --gap-between-items: 32px;
+      --items-per-row: 4;
+    }
   }
 
   &__item {
-
-    &-image {
+    &-img-wrapper {
       --absolute-items-inset: 8px;
-      height: 380px;
       background-color: var(--color__product-background);
       margin-bottom: 16px;
       overflow: hidden;
+      position: relative;
+      padding-top: 138%;
     }
+
+   &-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+   }
 
     del {
       color: var(--color__disabled);

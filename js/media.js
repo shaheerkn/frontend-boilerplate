@@ -16,7 +16,7 @@ if (mediaSliderEl) {
         slidesPerView: 3
       },
       1024: {
-        slidesPerView: 6,
+        slidesPerView: 6
       },
     },
   });

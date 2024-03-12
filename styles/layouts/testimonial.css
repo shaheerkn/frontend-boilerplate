@@ -10,11 +10,23 @@
   }
 
   .swiper-slide {
-    padding: 32px 64px;
+    padding: 32px 0;
     text-align: center;
     display: flex;
     flex-direction: column;
     gap: 16px;
+
+    @media (--s) {
+       padding: 32px 64px;
+    }
+  }
+
+  .button-style-arrow {
+    display: none;
+
+    @media (--ml) {
+      display: flex;
+    }
   }
 
   .swiper-slide + .swiper-slide:not(.swiper-slide-active) {
@@ -27,7 +39,7 @@
       left: 0px;
       height: 100%;
       width: 1px;
-      background-image: linear-gradient(180deg, rgba(182, 182, 182, 0) 0%, #B6B6B6 50%, rgba(182, 182, 182, 0) 100%);
+      background-image: linear-gradient(180deg, #b6b6b600 0%, #B6B6B6 50%, #b6b6b600 100%);
     }
   }
 

@@ -11,3 +11,4 @@
 @custom-media --xlg (min-width: 1600px);
 @custom-media --xxlg (min-width: 1660px);
 @custom-media --xxl (min-width: 1800px);
+@custom-media --xxxl (min-width: 1920px);

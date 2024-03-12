@@ -8,6 +8,7 @@
     flex-wrap: wrap;
 
     @media (--ml) {
+      flex-wrap: nowrap;
       justify-content: space-between;
     }
   }
@@ -38,17 +39,29 @@
     @media (--xs) {
       gap: 24px;
     }
+
+    .h1 {
+      font-size: 16px;
+
+      @media (--xxs) {
+        font-size: 24px;
+      }
+
+      @media (--xs) {
+        font-size: 56px;
+      }
+    }
   }
 
-  &__items .h1 {
-    font-size: 16px;
+  &__item {
+    width: 65px;
 
     @media (--xxs) {
-      font-size: 24px;
+      width: 80px;
     }
 
     @media (--xs) {
-      font-size: 56px;
+      width: 100px;
     }
   }
 }

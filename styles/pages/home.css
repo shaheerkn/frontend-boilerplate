@@ -1,0 +1,8 @@
+@import '../layouts/banner';
+@import '../layouts/categories';
+@import '../layouts/featured';
+@import '../layouts/countdown';
+@import '../layouts/testimonial';
+@import '../layouts/latest-articles';
+@import '../layouts/newsletter.css';
+@import '../layouts/media.css';

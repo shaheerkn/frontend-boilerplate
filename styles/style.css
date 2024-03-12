@@ -6,15 +6,8 @@
 @import 'components/buttons';
 @import 'components/navigations';
 @import 'components/badge';
-
-/* Sections */
 @import 'layouts/header';
-@import 'layouts/banner';
-@import 'layouts/categories';
-@import 'layouts/featured';
-@import 'layouts/countdown';
-@import 'layouts/testimonial';
-@import 'layouts/latest-articles';
-@import 'layouts/newsletter.css';
-@import 'layouts/media.css';
 @import 'layouts/footer';
+
+/* Pages */
+@import 'pages/home';

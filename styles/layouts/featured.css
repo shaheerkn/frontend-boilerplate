@@ -1,10 +1,18 @@
 .featured {
   margin-block: 120px;
 
+  &__header {
+    margin-bottom: 32px;
+    gap: 32px;
+
+    &-content {
+      width: 80%;
+    }
+  }
+
   .row {
     --gap-between-items: 32px;
     --items-per-row: 1;
-    margin-top: 32px;
 
     @media (--xxs) {
       --gap-between-items: 50px;
@@ -56,7 +64,19 @@
     }
   }
 
-  &__all-btn {
+  &.featured--header-w-btn {
+    .featured__all-btn {
+      flex-shrink: 0;
+    }
+
+    .featured__header {
+      margin-bottom: 48px;
+      justify-content: space-between;
+    }
+  }
+
+
+  &:not(.featured--header-w-btn) .featured__all-btn {
     margin-top: 32px;
     display: block;
     width: fit-content;

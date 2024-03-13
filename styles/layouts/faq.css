@@ -1,0 +1,10 @@
+@import '../components/accordion';
+
+.faq {
+  background-color: var(--color__product-background);
+  padding-block: 120px;
+
+  &__title {
+    margin-bottom: 32px;
+  }
+}

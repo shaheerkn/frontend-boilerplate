@@ -22,7 +22,7 @@
         </nav>
 
         <div class="header__icons" role="toolbar" aria-label="Tools">
-          <button aria-label="Search">
+          <button aria-label="Search" data-search-trigger>
             <img src="/assets/icons/icon-search.svg" alt="Search">
           </button>
 
@@ -40,6 +40,13 @@
           </button>
         </div>
       </div>
+
+      <div class="search" data-search-el>
+        <form>
+          <input type="search" name="search" placeholder="Search" autofocus>
+        </form>
+        <button data-search-close><img src="/assets/icons/icon-cross.svg" alt="icon-close"></button>
+      </div>
     </header>
 
     <main>
@@ -49,16 +56,20 @@
             <div class="swiper-slide">
               <img src="/assets/images/banner-slide-1.webp" alt="Slide" aria-hidden="true" class="background-element">
               <div class="container z2">
-                <h1 class="h1 capitalize">Discover the best summer collection</h1>
-                <p class="medium-text">Avail Upto 70% Flat Discounts!</p>
-                <a href="#" class="btn uppercase">All Products</a>
+                 <div class="inner-container flex flex-direction-column align-start">
+                   <h1 class="h1 capitalize">Discover the best summer collection</h1>
+                   <p class="medium-text">Avail Upto 70% Flat Discounts!</p>
+                   <a href="#" class="btn btn--hover-arrow uppercase">All Products</a>
+                 </div>
               </div>
             </div>
             <div class="swiper-slide">
               <div class="container">
-                <h1 class="h1 capitalize" data-swiper-parallax="-400">Discover the best summer collection</h1>
-                <p class="medium-text" data-swiper-parallax="-100">Avail Upto 70% Flat Discounts!</p>
-                <a href="#" class="btn uppercase" data-swiper-parallax="-50">All Products</a>
+                <div class="inner-container flex flex-direction-column align-start">
+                  <h1 class="h1 capitalize" data-swiper-parallax="-400">Discover the best summer collection</h1>
+                  <p class="medium-text" data-swiper-parallax="-100">Avail Upto 70% Flat Discounts!</p>
+                  <a href="#" class="btn btn--hover-arrow uppercase">All Products</a>
+                </div>
               </div>
             </div>
           </div>
@@ -68,7 +79,7 @@
             <div class="swiper-pagination" aria-label="Pagination"></div>
             <div class="swiper-button-next" aria-label="Next Slide"></div>
 
-            <div class="autoplay-progress" aria-hidden="true">
+            <div class="autoplay-progress relative" aria-hidden="true">
               <svg viewBox="0 0 48 48" aria-hidden="true">
                 <circle cx="24" cy="24" r="20"></circle>
               </svg>
@@ -208,7 +219,7 @@
             </div>
           </div>
 
-          <a href="#" class="btn featured__all-btn">All products</a>
+          <a href="#" class="btn btn--hover-arrow featured__all-btn">All products</a>
         </div>
       </section>
 
@@ -335,7 +346,7 @@
                   <img src="/assets/icons/icon-favourite.svg" alt="icon-favourite">
                 </button>
                 <div class="badge absolute z1">-40%</div>
-                
+
                 <a href="#" class="featured__item-img flex-center">
                   <img src="/assets/images/product.webp" alt="product-img" />
                 </a>
@@ -354,7 +365,7 @@
             </div>
           </div>
 
-          <a href="#" class="btn featured__all-btn">All products</a>
+          <a href="#" class="btn btn--hover-arrow featured__all-btn">All products</a>
         </div>
       </section>
 
@@ -494,24 +505,69 @@
         </div>
       </section>
 
-      <section class="media">
+      <section class="media" aria-hidden="true">
         <div class="swiper media__slider">
           <div class="swiper-wrapper">
-            <div class="swiper-slide"></div>
-            <div class="swiper-slide"></div>
-            <div class="swiper-slide"></div>
-            <div class="swiper-slide"></div>
-            <div class="swiper-slide"></div>
-            <div class="swiper-slide"></div>
-            <div class="swiper-slide"></div>
-            <div class="swiper-slide"></div>
-            <div class="swiper-slide"></div>
-            <div class="swiper-slide"></div>
-            <div class="swiper-slide"></div>
-            <div class="swiper-slide"></div>
-            <div class="swiper-slide"></div>
-            <div class="swiper-slide"></div>
-            <div class="swiper-slide"></div>
+            <div class="swiper-slide">
+              <img src="/assets/images/timer.webp" alt="gallery">
+            </div>
+            <div class="swiper-slide">
+              <img src="/assets/images/testimonial-1.webp" alt="gallery">
+            </div>
+            <div class="swiper-slide">
+              <img src="/assets/images/timer.webp" alt="gallery">
+            </div>
+            <div class="swiper-slide">
+              <img src="/assets/images/testimonial-1.webp" alt="gallery">
+            </div>
+            <div class="swiper-slide">
+              <img src="/assets/images/timer.webp" alt="gallery">
+            </div>
+            <div class="swiper-slide">
+              <img src="/assets/images/testimonial-1.webp" alt="gallery">
+            </div>
+            <div class="swiper-slide">
+              <img src="/assets/images/timer.webp" alt="gallery">
+            </div>
+            <div class="swiper-slide">
+              <img src="/assets/images/testimonial-1.webp" alt="gallery">
+            </div>
+            <div class="swiper-slide">
+              <img src="/assets/images/timer.webp" alt="gallery">
+            </div>
+            <div class="swiper-slide">
+              <img src="/assets/images/testimonial-1.webp" alt="gallery">
+            </div>
+            <div class="swiper-slide">
+              <img src="/assets/images/timer.webp" alt="gallery">
+            </div>
+            <div class="swiper-slide">
+              <img src="/assets/images/testimonial-1.webp" alt="gallery">
+            </div>
+            <div class="swiper-slide">
+              <img src="/assets/images/timer.webp" alt="gallery">
+            </div>
+            <div class="swiper-slide">
+              <img src="/assets/images/testimonial-1.webp" alt="gallery">
+            </div>
+            <div class="swiper-slide">
+              <img src="/assets/images/timer.webp" alt="gallery">
+            </div>
+            <div class="swiper-slide">
+              <img src="/assets/images/testimonial-1.webp" alt="gallery">
+            </div>
+            <div class="swiper-slide">
+              <img src="/assets/images/timer.webp" alt="gallery">
+            </div>
+            <div class="swiper-slide">
+              <img src="/assets/images/testimonial-1.webp" alt="gallery">
+            </div>
+            <div class="swiper-slide">
+              <img src="/assets/images/timer.webp" alt="gallery">
+            </div>
+            <div class="swiper-slide">
+              <img src="/assets/images/testimonial-1.webp" alt="gallery">
+            </div>
           </div>
         </div>
       </section>
@@ -548,6 +604,7 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script type="module" src="/js/search.js"></script>
     <script type="module" src="/js/banner.js"></script>
     <script type="module" src="/js/testimonials.js"></script>
     <script type="module" src="/js/media.js"></script>

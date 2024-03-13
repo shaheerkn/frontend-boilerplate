@@ -72,6 +72,11 @@
     .featured__header {
       margin-bottom: 48px;
       justify-content: space-between;
+
+      @media (--s) {
+        text-align: left;
+        flex-direction: row;
+      }
     }
   }
 

@@ -62,3 +62,61 @@
     }
   }
 }
+
+.newsletter-large {
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--color__border);
+    margin-block: 120px;
+    padding-inline: 0;
+    flex-direction: column;
+    gap: 20px;
+
+    @media (--s) {
+      flex-direction: row-reverse;
+      justify-content: space-between;
+    }
+  }
+
+  &__content {
+    padding: 20px 64px 40px 64px;
+
+    @media (--s) {
+      flex-basis: 675px;
+    }
+
+    form {
+      margin-top: 24px;
+      display: flex;
+      gap: 8px;
+    }
+
+    input {
+      border: 2px solid var(--color__border);
+      border-radius: 1000px;
+      padding: 10px 10px 10px 48px;
+      background-image: url("data:image/svg+xml,%3Csvg width='24' height='25' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2 4.372h20v17H2v-17z' stroke='%2350248F' stroke-width='1.5' stroke-linejoin='round'/%3E%3Cpath d='m2 7.872 10 5 10-5' stroke='%2350248F' stroke-width='1.5'/%3E%3C/svg%3E");
+      background-position: left 12px center;
+      background-repeat: no-repeat;
+    }
+
+    .btn[type=submit] {
+      background-color: var(--color__secondary);
+    }
+  }
+
+  &__image {
+    width: 100%;
+
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+
+    @media (--s) {
+      flex-basis: 525px;
+    }
+  }
+}

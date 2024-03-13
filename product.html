@@ -10,10 +10,10 @@
   <body>
     <header class="header">
       <div class="container">
-        <a href="#" class="brand">Logo</a>
+        <a href="/" class="brand">Logo</a>
         <nav role="navigation">
           <ul class="main-navigation" role="menubar">
-            <li><a href="#home">Home</a></li>
+            <li><a href="/">Home</a></li>
             <li><a href="#about">Clothing</a></li>
             <li><a href="#services">Shoes</a></li>
             <li><a href="#contact">Gift</a></li>
@@ -52,8 +52,8 @@
     <main>
       <section class="featured featured--header-w-btn" aria-label="Featured products">
         <div class="container">
-          <div class="featured__header flex justify-content-center align-center">
-            <div class="text-left">
+          <div class="featured__header flex flex-direction-column text-center justify-content-center align-center">
+            <div>
               <h2 class="h2 seaction-title capitalize">products You may like</h2>
               <p class="medium-text">Some standout products in our collection</p>
             </div>
@@ -168,7 +168,7 @@
             <div class="accordion__item">
               <button class="accordion__button flex align-center" aria-expanded="false">
                 <span class="accordion__button-icon relative" aria-hidden="true"></span>
-                <span>Are your products organic / natural?</span>
+                <h4 class="accordion__button-text h5">Are your products organic / natural?</h4>
               </button>
 
               <div class="accordion__content">
@@ -179,7 +179,7 @@
             <div class="accordion__item">
               <button class="accordion__button flex align-center" aria-expanded="false">
                 <span class="accordion__button-icon relative" aria-hidden="true"></span>
-                <h4 class="h4">Do your products contain fragrance?</h4>
+                <h4 class="accordion__button-text h5">Do your products contain fragrance?</h4>
               </button>
 
               <div class="accordion__content">
@@ -190,7 +190,7 @@
             <div class="accordion__item">
               <button class="accordion__button flex align-center" aria-expanded="false">
                 <span class="accordion__button-icon relative" aria-hidden="true"></span>
-                <h4 class="h4">Is there talc in any of your products?</h4>
+                <h4 class="accordion__button-text h5">Is there talc in any of your products?</h4>
               </button>
 
               <div class="accordion__content">
@@ -201,7 +201,7 @@
             <div class="accordion__item">
               <button class="accordion__button flex align-center" aria-expanded="false">
                 <span class="accordion__button-icon relative" aria-hidden="true"></span>
-                <h4 class="h4">What is the shelf life of my product?</h4>
+                <h4 class="accordion__button-text h5">What is the shelf life of my product?</h4>
               </button>
 
               <div class="accordion__content">
@@ -212,11 +212,29 @@
 
         </div>
       </section>
+
+      <section class="newsletter-large">
+        <div class="container">
+          <div class="newsletter-large__image">
+            <img src="/assets/images/newsletter.webp" alt="" srcset="">
+          </div>
+
+          <div class="newsletter-large__content">
+            <h2 class="h2">Subscribe to our newsletter  </h2>
+            <p class="medium-text">Subscribe to get all the latest updates to your inbox</p>
+
+            <form>
+              <input type="email" placeholder="yourmail@name.com" required>
+              <button type="submit" class="btn uppercase">subscribe</button>
+            </form>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer class="footer">
       <div class="container">
-        <a href="#" class="brand" aria-label="you are on swift">Logo</a>
+        <a href="/" class="brand" aria-label="you are on swift">Logo</a>
 
         <nav role="navigation">
           <ul class="main-navigation footer-navigation" role="menubar">

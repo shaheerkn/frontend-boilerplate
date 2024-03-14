@@ -50,6 +50,65 @@
     </header>
 
     <main>
+      <section class="main-product">
+        <div class="main-product__media-wrapper">
+          <div class="main-product__media"></div>
+          <div class="main-product__media"></div>
+          <div class="main-product__media"></div>
+          <div class="main-product__media"></div>
+        </div>
+        <div class="main-product__content">
+          <div class="main-product__inner">
+            <h2 class="h2">Short product title goes here</h2>
+            <p class="h4" aria-label="Price">
+              <span>$129.00</span>
+              <del aria-hidden="true">$29</del>
+            </p>
+
+            <div class="color-swatches">
+              <h6 class="h6 bold">Color:</h6>
+              <div class="color-swatches__wrapper">
+                <input type="radio" id="product-color-1" name="product-color-swatches" class="d-none">
+                <label for="product-color-1"></label>
+                <input type="radio" id="product-color-2" name="product-color-swatches" class="d-none">
+                <label for="product-color-2"></label>
+                <input type="radio" id="product-color-3" name="product-color-swatches" class="d-none">
+                <label for="product-color-3"></label>
+              </div>
+            </div>
+
+            <div class="product-sizes">
+              <h6 class="h6 bold">Size:</h6>
+              <div class="product-sizes__wrapper h6 bold capitalize">
+                <input type="radio" id="product-size-1" name="product-size" class="d-none">
+                <label for="product-size-1">S</label>
+                <input type="radio" id="product-size-2" name="product-size" class="d-none">
+                <label for="product-size-2">xS</label>
+                <input type="radio" id="product-size-3" name="product-size" class="d-none">
+                <label for="product-size-3">Medium</label>
+                <input type="radio" id="product-size-4" name="product-size" class="d-none">
+                <label for="product-size-4">L</label>
+                <input type="radio" id="product-size-5" name="product-size" class="d-none">
+                <label for="product-size-5">XL</label>
+                <input type="radio" id="product-size-6" name="product-size" class="d-none">
+                <label for="product-size-6">XXL</label>
+              </div>
+            </div>
+
+            <div class="quantity-selector">
+              <h6 class="h6 bold">Quantity:</h6>
+
+              <div class="quantity-selector__wrapper">
+                <button data-quantity-decreament><img src="/assets/icons/icon-minus.svg" alt="icon-minus"></button>
+                <input type="number" name="product-quantity" min="1" value="1" data-quantity>
+                <button data-quantity-increament><img src="/assets/icons/icon-plus.svg" alt="icon-plus"></button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
       <section class="featured featured--header-w-btn" aria-label="Featured products">
         <div class="container">
           <div class="featured__header flex flex-direction-column text-center justify-content-center align-center">
@@ -265,5 +324,6 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script type="module" src="/js/search.js"></script>
     <script type="module" src="/js/faq.js"></script>
+    <script type="module" src="/js/quantity-selector.js"></script>
   </body>
 </html>

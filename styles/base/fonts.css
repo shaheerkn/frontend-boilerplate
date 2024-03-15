@@ -1,14 +1,20 @@
 @font-face {
   font-family: 'visby-semibold';
-  src: url('/assets/fonts/VisbyCF-DemiBold.otf');
+  src: url('/assets/fonts/VisbyCF-DemiBold.woff');
+  font-display: swap;
+  font-style: normal;
 }
 
 @font-face {
   font-family: 'visby-medium';
-  src: url('/assets/fonts/VisbyCF-Medium.otf');
+  src: url('/assets/fonts/VisbyCF-Medium.woff');
+  font-display: swap;
+  font-style: normal;
 }
 
 @font-face {
   font-family: 'visby-regular';
-  src: url('/assets/fonts/VisbyCF-Regular.otf');
+  src: url('/assets/fonts/VisbyCF-Regular.woff');
+  font-display: swap;
+  font-style: normal;
 }

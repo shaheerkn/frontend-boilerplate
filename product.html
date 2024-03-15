@@ -23,19 +23,19 @@
 
         <div class="header__icons" role="toolbar" aria-label="Tools">
           <button aria-label="Search" data-search-trigger>
-            <img src="/assets/icons/icon-search.svg" alt="Search">
+            <img src="assets/icons/icon-search.svg" alt="Search">
           </button>
 
           <button aria-label="Account">
-            <img src="/assets/icons/icon-account.svg" alt="Account">
+            <img src="assets/icons/icon-account.svg" alt="Account">
           </button>
 
           <button aria-label="Favorites">
-            <img src="/assets/icons/icon-heart.svg" alt="Favorites">
+            <img src="assets/icons/icon-heart.svg" alt="Favorites">
           </button>
 
           <button class="header__add-to-cart flex align-center" aria-label="Cart">
-            <img src="/assets/icons/icon-cart.svg" alt="Cart">
+            <img src="assets/icons/icon-cart.svg" alt="Cart">
             <span class="flex-center">0</span>
           </button>
         </div>
@@ -45,18 +45,29 @@
         <form>
           <input type="search" name="search" placeholder="Search">
         </form>
-        <button data-search-close><img src="/assets/icons/icon-cross.svg" alt="icon-close"></button>
+        <button data-search-close><img src="assets/icons/icon-cross.svg" alt="icon-close"></button>
       </div>
     </header>
 
     <main>
       <section class="main-product">
         <div class="main-product__media-wrapper">
-          <div class="main-product__media"></div>
-          <div class="main-product__media"></div>
-          <div class="main-product__media"></div>
-          <div class="main-product__media"></div>
+          <div class="swiper-wrapper">
+            <div class="main-product__media swiper-slide">1</div>
+            <div class="main-product__media swiper-slide">2</div>
+            <div class="main-product__media swiper-slide">3</div>
+            <div class="main-product__media swiper-slide">4</div>
+            <div class="main-product__media swiper-slide">1</div>
+            <div class="main-product__media swiper-slide">2</div>
+            <div class="main-product__media swiper-slide">3</div>
+            <div class="main-product__media swiper-slide">4</div>
+            <div class="main-product__media swiper-slide">1</div>
+            <div class="main-product__media swiper-slide">2</div>
+            <div class="main-product__media swiper-slide">3</div>
+            <div class="main-product__media swiper-slide">4</div>
+          </div>
         </div>
+
         <div class="main-product__content">
           <div class="main-product__inner">
             <h2 class="h2">Short product title goes here</h2>
@@ -99,12 +110,38 @@
               <h6 class="h6 bold">Quantity:</h6>
 
               <div class="quantity-selector__wrapper">
-                <button data-quantity-decreament><img src="/assets/icons/icon-minus.svg" alt="icon-minus"></button>
+                <button data-quantity-decreament><img src="assets/icons/icon-minus.svg" alt="icon-minus"></button>
                 <input type="number" name="product-quantity" min="1" value="1" data-quantity>
-                <button data-quantity-increament><img src="/assets/icons/icon-plus.svg" alt="icon-plus"></button>
+                <button data-quantity-increament><img src="assets/icons/icon-plus.svg" alt="icon-plus"></button>
               </div>
             </div>
 
+            <div class="main-product__buttons flex flex-direction-column">
+              <button class="btn btn--fluid uppercase">buy it now</button>
+              <button class="btn btn--borders btn--fluid uppercase">add to cart</button>
+            </div>
+
+            <div class="main-product__stock">
+              <label for="main-product__stock" class="uppercase">hurry, only <b>18 items</b> left in stock</label>
+              <progress id="main-product__stock" value="40" max="100"></progress>
+            </div>
+
+            <div class="main-product__dropdowns">
+              <details>
+                <summary class="bold capitalize">reviews (236)</summary>
+                <p class="text-base">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet eos voluptatem quas ducimus nobis alias temporibus sit esse deserunt maxime illum veritatis, molestias mollitia atque expedita quo laborum modi dolorem.1</p>
+              </details>
+              
+              <details>
+                <summary class="bold capitalize">Description</summary>
+                <p class="text-base">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet eos voluptatem quas ducimus nobis alias temporibus sit esse deserunt maxime illum veritatis, molestias mollitia atque expedita quo laborum modi dolorem.1</p>
+              </details>
+
+              <details>
+                <summary class="bold capitalize">Return & Refund Policy</summary>
+                <p class="text-base">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet eos voluptatem quas ducimus nobis alias temporibus sit esse deserunt maxime illum veritatis, molestias mollitia atque expedita quo laborum modi dolorem.1</p>
+              </details>
+            </div>
           </div>
         </div>
       </section>
@@ -123,17 +160,17 @@
             <div class="row__item featured__item relative">
               <div class="featured__item-img-wrapper">
                 <button class="btn btn--fav absolute z1">
-                  <img src="/assets/icons/icon-favourite.svg" alt="icon-favourite">
+                  <img src="assets/icons/icon-favourite.svg" alt="icon-favourite">
                 </button>
                 <div class="badge absolute z1">-40%</div>
 
                 <a href="#" class="featured__item-img flex-center">
-                  <img src="/assets/images/product.webp" alt="product-img" />
+                  <img src="assets/images/product.webp" alt="product-img" />
                 </a>
               </div>
               <div class="featured__item-info relative">
                 <button class="btn btn--cart absolute">
-                <img src="/assets/icons/icon-cart-white.svg" alt="icon-favourite">
+                <img src="assets/icons/icon-cart-white.svg" alt="icon-favourite">
                 </button>
 
                 <a href="#" class="h5 capitalize text-decoration-none">product title</a>
@@ -147,17 +184,17 @@
             <div class="row__item featured__item relative">
               <div class="featured__item-img-wrapper">
                 <button class="btn btn--fav absolute z1">
-                  <img src="/assets/icons/icon-favourite.svg" alt="icon-favourite">
+                  <img src="assets/icons/icon-favourite.svg" alt="icon-favourite">
                 </button>
                 <div class="badge absolute z1">-40%</div>
 
                 <a href="#" class="featured__item-img flex-center">
-                  <img src="/assets/images/product-2.webp" alt="product-img" />
+                  <img src="assets/images/product-2.webp" alt="product-img" />
                 </a>
               </div>
               <div class="featured__item-info relative">
                 <button class="btn btn--cart absolute">
-                <img src="/assets/icons/icon-cart-white.svg" alt="icon-favourite">
+                <img src="assets/icons/icon-cart-white.svg" alt="icon-favourite">
                 </button>
 
                 <a href="#" class="h5 capitalize text-decoration-none">product title</a>
@@ -171,17 +208,17 @@
             <div class="row__item featured__item relative">
               <div class="featured__item-img-wrapper">
                 <button class="btn btn--fav absolute z1">
-                  <img src="/assets/icons/icon-favourite.svg" alt="icon-favourite">
+                  <img src="assets/icons/icon-favourite.svg" alt="icon-favourite">
                 </button>
                 <div class="badge absolute z1">-40%</div>
 
                 <a href="#" class="featured__item-img flex-center">
-                  <img src="/assets/images/product-3.webp" alt="product-img" />
+                  <img src="assets/images/product-3.webp" alt="product-img" />
                 </a>
               </div>
               <div class="featured__item-info relative">
                 <button class="btn btn--cart absolute">
-                <img src="/assets/icons/icon-cart-white.svg" alt="icon-favourite">
+                <img src="assets/icons/icon-cart-white.svg" alt="icon-favourite">
                 </button>
 
                 <a href="#" class="h5 capitalize text-decoration-none">product title</a>
@@ -195,17 +232,17 @@
             <div class="row__item featured__item relative">
               <div class="featured__item-img-wrapper">
                 <button class="btn btn--fav absolute z1">
-                  <img src="/assets/icons/icon-favourite.svg" alt="icon-favourite">
+                  <img src="assets/icons/icon-favourite.svg" alt="icon-favourite">
                 </button>
                 <div class="badge absolute z1">-40%</div>
 
                 <a href="#" class="featured__item-img flex-center">
-                  <img src="/assets/images/product.webp" alt="product-img" />
+                  <img src="assets/images/product.webp" alt="product-img" />
                 </a>
               </div>
               <div class="featured__item-info relative">
                 <button class="btn btn--cart absolute">
-                <img src="/assets/icons/icon-cart-white.svg" alt="icon-favourite">
+                <img src="assets/icons/icon-cart-white.svg" alt="icon-favourite">
                 </button>
 
                 <a href="#" class="h5 capitalize text-decoration-none">product title</a>
@@ -275,7 +312,7 @@
       <section class="newsletter-large">
         <div class="container">
           <div class="newsletter-large__image">
-            <img src="/assets/images/newsletter.webp" alt="" srcset="">
+            <img src="assets/images/newsletter.webp" alt="" srcset="">
           </div>
 
           <div class="newsletter-large__content">
@@ -309,13 +346,13 @@
           Copyright ©2023 name - Created by Uptek Pvt. Ltd.
 
           <ul class="payment-methods flex text-center flex-wrap justify-content-start" aria-label="Payment Methods">
-            <li class="flex-center"><img src="/assets/icons/icon-stripe.svg" aria-hidden="true" alt="icon-stripe"></li>
-            <li class="flex-center"><img src="/assets/icons/icon-visa.svg" aria-hidden="true" alt="icon-visa"></li>
-            <li class="flex-center"><img src="/assets/icons/icon-mastercard.svg" aria-hidden="true" alt="icon-mastercard"></li>
-            <li class="flex-center"><img src="/assets/icons/icon-paypal.svg" aria-hidden="true" alt="icon-paypal"></li>
-            <li class="flex-center"><img src="/assets/icons/icon-applepay.svg" aria-hidden="true" alt="icon-applepay"></li>
-            <li class="flex-center"><img src="/assets/icons/icon-googlepay.svg" aria-hidden="true" alt="icon-googlepay"></li>
-            <li class="flex-center"><img src="/assets/icons/icon-express.svg" aria-hidden="true" alt="icon-express"></li>
+            <li class="flex-center"><img src="assets/icons/icon-stripe.svg" aria-hidden="true" alt="icon-stripe"></li>
+            <li class="flex-center"><img src="assets/icons/icon-visa.svg" aria-hidden="true" alt="icon-visa"></li>
+            <li class="flex-center"><img src="assets/icons/icon-mastercard.svg" aria-hidden="true" alt="icon-mastercard"></li>
+            <li class="flex-center"><img src="assets/icons/icon-paypal.svg" aria-hidden="true" alt="icon-paypal"></li>
+            <li class="flex-center"><img src="assets/icons/icon-applepay.svg" aria-hidden="true" alt="icon-applepay"></li>
+            <li class="flex-center"><img src="assets/icons/icon-googlepay.svg" aria-hidden="true" alt="icon-googlepay"></li>
+            <li class="flex-center"><img src="assets/icons/icon-express.svg" aria-hidden="true" alt="icon-express"></li>
           </ul>
         </div>
       </div>
@@ -325,5 +362,6 @@
     <script type="module" src="/js/search.js"></script>
     <script type="module" src="/js/faq.js"></script>
     <script type="module" src="/js/quantity-selector.js"></script>
+    <script type="module" src="/js/main-product-slider.js"></script>
   </body>
 </html>

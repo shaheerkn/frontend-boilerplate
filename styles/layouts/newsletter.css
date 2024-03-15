@@ -81,15 +81,17 @@
   }
 
   &__content {
-    padding: 20px 64px 40px 64px;
+    padding: 20px 25px;
 
     @media (--s) {
+      padding: 20px 64px 40px 64px;
       flex-basis: 675px;
     }
 
     form {
       margin-top: 24px;
       display: flex;
+      flex-wrap: wrap;
       gap: 8px;
     }
 

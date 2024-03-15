@@ -2,6 +2,7 @@ button {
   all: unset;
   appearance: none;
   cursor: pointer;
+  box-sizing: border-box;
 }
 
 .btn {
@@ -85,4 +86,17 @@ button {
 
 .btn--cart {
   background-color: var(--color__primary);
+}
+
+.btn--fluid {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn--borders {
+  background-color: transparent;
+  color: var(--color__primary);
+  border: 1px solid currentColor;
 }

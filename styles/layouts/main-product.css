@@ -1,78 +1,99 @@
 @import '../components/quantity-selector';
+@import '../components/color-swatches';
+@import '../components/product-sizes';
 
 .main-product {
-  border: 1px solid red;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+
+  @media (--s) {
+    height: 100vh;
+    overflow: scroll;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+  }
 
   &__media-wrapper {
-    border: 1px solid red;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 6px;
+    .swiper-wrapper {
+      @media (--s) {
+        display: grid;
+        gap: 6px;
+        grid-template-columns: 1fr;
+      }
+
+      @media (--l) {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
   }
 
   &__media {
-    border: 1px solid red;
+    background-color: var(--color__placeholder);
     padding-top: 100%;
   }
 
   &__content {
-    padding: 48px;
+    padding: 20px;
+
+    @media (--s) {
+      padding: 48px;
+    }
   }
 
   &__inner {
-    padding: ;
-  }
-
-  .color-swatches {
-    margin-top: 20px;
-
-    &__wrapper {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      margin-top: 8px;
-
-      label {
-        width: 80px;
-        height: 80px;
-        border: 1px solid red;
-        cursor: pointer;
-      }
-
-      input {
-        display: none;
-      }
-
-      input:checked + label {
-        border: 2px solid green;
-      }
-    }
-  }
-
-  .product-sizes {
-    margin-top: 20px;
-
-    &__wrapper {
-      display: flex;
-      gap: 8px;
-      margin-top: 8px;
-    }
-
-    label {
-      border: 1px solid var(--color__border);
-      padding: 4px 16px;
-      cursor: pointer;
-
-    }
-
-    input:checked + label {
-      border-color: var(--color__secondary);
+    max-width: 590px;
+    
+    @media (--s) {
+      position: sticky;
+      top: 20px;
+      padding-right: 25px;
     }
   }
 
   .quantity-selector {
     margin-top: 20px;
+  }
+
+  &__buttons {
+    margin-top: 20px;
+    gap: 12px;
+
+    .btn {
+      width: 100%;
+    }
+  }
+
+  &__stock {
+    margin-top: 32px;
+
+    label {
+      color: var(--color__disabled);
+      font-size: 14px;
+      line-height: 1.7;
+
+      b {
+        color: var(--color__primary);
+      }
+    }
+
+    progress {
+      width: 100%;
+      accent-color: var(--color__secondary);
+    }
+  }
+
+  &__dropdowns {
+    margin-top: 32px;
+
+    details {
+      summary {
+        padding-block: 16px;
+        background-image: url('/assets/icons/icon-dropdown.png');
+        background-repeat: no-repeat;
+        background-position: right center;
+        border-bottom: 1px solid var(--color__border);
+        cursor: pointer;
+        list-style: none;
+        margin-bottom: 10px;
+      }
+    }
   }
 }

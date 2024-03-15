@@ -1,0 +1,26 @@
+.color-swatches {
+  margin-top: 20px;
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 8px;
+
+    label {
+      width: 80px;
+      height: 80px;
+      background-color: var(--color__placeholder);
+      cursor: pointer;
+    }
+
+    input {
+      display: none;
+    }
+
+    input:checked + label {
+      border: 2px solid var(--color__secondary);
+    }
+  }
+}

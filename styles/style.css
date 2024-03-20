@@ -1,14 +1,7 @@
 @import 'abstracts/abstracts';
 @import 'base/typography';
 @import 'base/resets';
-@import 'vendors/swiper';
 @import 'utils/utils';
-@import 'components/buttons';
-@import 'components/navigations';
-@import 'components/badge';
-@import 'layouts/header';
-@import 'layouts/footer';
 
 /* Pages */
 @import 'pages/home';
-@import 'pages/product'

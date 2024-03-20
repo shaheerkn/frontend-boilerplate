@@ -5,14 +5,3 @@
   max-width: calc(1200px + (var(--mobile-x-padding) * 2));
   margin-inline: auto;
 }
-
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: var(--gap-between-items, 32px);
-
-  &__item {
-    flex-basis: calc((100% - (var(--gap-between-items, 32px) * (var(--items-per-row, 3) - 1))) / var(--items-per-row, 3));
-  }
-}

@@ -1,5 +1,5 @@
 
-# Swift Theme Static Version
+# Fronted Static Boilerplate
 
 ## Run Locally
 
